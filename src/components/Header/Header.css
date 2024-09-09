@@ -13,5 +13,10 @@
     display: flex;
     gap: 2rem;
     color: white;
+    
+}
 
+.header-menu>li:hover {
+    color: var(--orange);
+    cursor: pointer;
 }
