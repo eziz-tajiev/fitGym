@@ -156,14 +156,14 @@
 .calories {
   display: flex;
   gap: 2rem;
+  width: 13rem;
   background-color: var(--caloryCard);
   border-radius: 5px;
   padding: 1rem;
-  width: fit-content;
+  
   position: absolute;
   top: 32rem;
   right: 28rem;
-  
 }
 
 .calories > img {
@@ -182,5 +182,8 @@
 
 .calories > div > :nth-child(2) {
   color: white;
+  font-size: 1.5rem;
 }
+
+
 
