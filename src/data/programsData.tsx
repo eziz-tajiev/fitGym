@@ -1,4 +1,12 @@
-export const programsData = [
+import React from 'react'
+
+type TData = {
+  image: React.ReactNode
+  heading: string
+  details: string
+}
+
+export const programsData: TData[] = [
   {
     image: (
       <svg
