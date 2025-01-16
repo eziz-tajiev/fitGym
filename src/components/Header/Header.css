@@ -4,33 +4,19 @@
 }
 
 .logo {
-    width: 10rem;
-    height: 3rem;
+    width: 15rem;
+    height: 4rem;
 }
 
 .header-menu {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     color: white;
-    
+    font-size: 21px;
 }
 
 .header-menu>li:hover {
-    color: var(--orange);
     cursor: pointer;
-}
-
-@media screen and (max-width: 768px) {
-    .header :nth-child(2) {
-        position: fixed;
-        right: 2rem;
-        z-index: 99;
-    }
-
-    .header-menu {
-        flex-direction: column;
-        background: var(--appColor);
-        padding: 2rem;
-    }
+    color: var(--orange);
 }
