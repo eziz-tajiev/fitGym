@@ -1,4 +1,5 @@
 .hero {
+    height: 100vh;
     display: flex;
     justify-content: space-between;
 }
@@ -8,7 +9,7 @@
     padding-top: 1.5rem;
     flex: 3;
     display: flex;
-    gap: 2rem;
+    gap: 4.5rem;
     flex-direction: column;
 }
 
@@ -17,12 +18,11 @@
 }
 
 .the-best {
-    margin-top: 4rem;
     background-color: #363d42;
     font-size: 1.3rem;
     border-radius: 4rem;
     width: fit-content;
-    padding: 20px 13px;
+    padding: 24px 13px;
     text-transform: uppercase;
     color: white;
     position: relative;
@@ -38,7 +38,7 @@
 .the-best>div {
     position: absolute;
     background-color: var(--orange);
-    width: 5.4rem;
+    width: 6rem;
     height: 80%;
     border-radius: 3rem;
     left: 8px;
@@ -61,7 +61,7 @@
     font-weight: 200;
     text-transform: none;
     letter-spacing: 1px;
-    width: 80%;
+    width: 40%;
 }
 
 .figures {
@@ -82,5 +82,22 @@
 .figures>div>span:nth-of-type(2) {
     color: var(--gray);
     text-transform: uppercase;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    font-weight: normal;
+}
+
+.hero-buttons>:nth-child(1) {
+    color: white;
+    background-color: var(--orange);
+}
+
+.hero-buttons>:nth-child(2) {
+    color: white;
+    background-color: transparent;
+    border: 2px solid var(--orange);
 }
 
