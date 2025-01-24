@@ -4,7 +4,7 @@ import './Hero.css'
 const Hero = () => {
   return(
     <div className="hero">
-      <div className="left-h">
+      <div className="hero-content">
         <Header />
         {/* The best */}
         <div className="the-best">
@@ -49,9 +49,11 @@ const Hero = () => {
         <button className="btn">Get Started</button>
         <button className="btn">Learn More</button>
        </div>
-       
       </div>
-      <div className="right-h">right side</div>
+      <div className="right-section">
+        <div className="circle">
+        </div>
+      </div>
     </div>
   )
 }

@@ -1,23 +1,19 @@
 .hero {
     height: 100vh;
     display: flex;
-    justify-content: space-between;
 }
 
-.left-h {
+.hero-content {
+    flex: 1;
     padding: 2rem;
     padding-top: 1.5rem;
-    flex: 3;
     display: flex;
     gap: 4.5rem;
     flex-direction: column;
 }
 
-.right-h {
-    flex: 1;
-}
-
 .the-best {
+    margin-top: 150px;
     background-color: #363d42;
     font-size: 1.3rem;
     border-radius: 4rem;
@@ -99,5 +95,21 @@
     color: white;
     background-color: transparent;
     border: 2px solid var(--orange);
+}
+
+.right-section {
+    flex: 1;
+    position: relative;
+}
+
+.circle {
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    height: 40rem;
+    width: 40rem;
+    border-radius: 50%;
+    background-color: var(--orange);
 }
 
