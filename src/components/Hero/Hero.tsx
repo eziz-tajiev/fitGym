@@ -1,6 +1,7 @@
 import React from "react";
 import Header from '../Header/Header'
 import './Hero.css'
+import HeroImage from '../../assets/fitnessHero.png'
 const Hero = () => {
   return(
     <div className="hero">
@@ -52,6 +53,7 @@ const Hero = () => {
       </div>
       <div className="right-section">
         <div className="circle">
+        <img className="hero-image" src={HeroImage} alt="" />
         </div>
       </div>
     </div>

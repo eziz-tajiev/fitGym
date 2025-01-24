@@ -113,3 +113,10 @@
     background-color: var(--orange);
 }
 
+.hero-image {
+    width: auto;
+    height: 35rem;
+
+
+}
+
