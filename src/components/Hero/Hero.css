@@ -1,122 +1,125 @@
 .hero {
-    height: 100vh;
-    display: flex;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
 }
 
 .hero-content {
-    flex: 1;
-    padding: 2rem;
-    padding-top: 1.5rem;
-    display: flex;
-    gap: 4.5rem;
-    flex-direction: column;
+  flex: 1;
+  padding: 2rem;
+  padding-top: 1.5rem;
+  display: flex;
+  gap: 4.5rem;
+  flex-direction: column;
 }
 
 .the-best {
-    margin-top: 150px;
-    background-color: #363d42;
-    font-size: 1.3rem;
-    border-radius: 4rem;
-    width: fit-content;
-    padding: 24px 13px;
-    text-transform: uppercase;
-    color: white;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  margin-top: 150px;
+  background-color: #363d42;
+  font-size: 1.3rem;
+  border-radius: 4rem;
+  width: fit-content;
+  padding: 24px 13px;
+  text-transform: uppercase;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.the-best>span {
-    z-index: 2;
+.the-best > span {
+  z-index: 2;
 }
 
-.the-best>div {
-    position: absolute;
-    background-color: var(--orange);
-    width: 6rem;
-    height: 80%;
-    border-radius: 3rem;
-    left: 8px;
-    z-index: 1;
+.the-best > div {
+  position: absolute;
+  background-color: var(--orange);
+  width: 6rem;
+  height: 80%;
+  border-radius: 3rem;
+  left: 8px;
+  z-index: 1;
 }
 
 .hero-text {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    text-transform: uppercase;
-    font-size: 5.5rem;
-    font-weight: bold;
-    color: white;
-    text-overflow: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-transform: uppercase;
+  font-size: 5.5rem;
+  font-weight: bold;
+  color: white;
+  text-overflow: inherit;
 }
 
 .hero-text > div:nth-of-type(3) {
-    font-size: 1.5rem;
-    font-weight: 200;
-    text-transform: none;
-    letter-spacing: 1px;
-    width: 40%;
+  font-size: 1.5rem;
+  font-weight: 200;
+  text-transform: none;
+  letter-spacing: 1px;
+  width: 40%;
 }
 
 .figures {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
-.figures>div {
-    display: flex;
-    flex-direction: column;
+.figures > div {
+  display: flex;
+  flex-direction: column;
 }
 
-.figures>div>span:nth-of-type(1) {
-    color: white;
-    font-size: 2.5rem;
+.figures > div > span:nth-of-type(1) {
+  color: white;
+  font-size: 2.5rem;
 }
 
-.figures>div>span:nth-of-type(2) {
-    color: var(--gray);
-    text-transform: uppercase;
+.figures > div > span:nth-of-type(2) {
+  color: var(--gray);
+  text-transform: uppercase;
 }
 
 .hero-buttons {
-    display: flex;
-    gap: 1rem;
-    font-weight: normal;
+  display: flex;
+  gap: 1rem;
+  font-weight: normal;
 }
 
-.hero-buttons>:nth-child(1) {
-    color: white;
-    background-color: var(--orange);
+.hero-buttons > :nth-child(1) {
+  color: white;
+  background-color: var(--orange);
 }
 
-.hero-buttons>:nth-child(2) {
-    color: white;
-    background-color: transparent;
-    border: 2px solid var(--orange);
+.hero-buttons > :nth-child(2) {
+  color: white;
+  background-color: transparent;
+  border: 2px solid var(--orange);
 }
 
 .right-section {
-    flex: 1;
-    position: relative;
+  flex: 1;
+  position: relative;
+  height: 1100px;
 }
 
 .circle {
-    left: 50%;
-    top: 55%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    height: 40rem;
-    width: 40rem;
-    border-radius: 50%;
-    background-color: var(--orange);
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  height: 40rem;
+  width: 40rem;
+  border-radius: 50%;
+  background-color: var(--orange);
+  overflow: hidden;
 }
 
 .hero-image {
-    width: auto;
-    height: 35rem;
-
-
+  position: absolute;
+  left: 6%;
+  top: 5%;
+  width: auto;
+  height: 38rem;
 }
-
