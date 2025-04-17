@@ -36,14 +36,13 @@
   position: relative;
 }
 
-.right-t > img{
+.right-t > img {
   position: absolute;
   width: 17rem;
   height: 20rem;
   object-fit: cover;
   right: 8rem;
   top: 2rem;
- 
 }
 
 .right-t > :nth-child(1) {
@@ -67,17 +66,15 @@
 
 .arrows {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   position: absolute;
   bottom: 1rem;
   left: 3rem;
-
 }
 
 .arrows > img {
   width: 1.5rem;
   cursor: pointer;
-
 }
 
 @media screen and (max-width: 768px) {
@@ -101,23 +98,19 @@
   .right-t > div {
     display: none;
     position: relative;
-
   }
 
   .right-t > img {
     top: 0;
     right: 0;
     position: relative;
-  
   }
 
   .right-t > :last-child {
     display: block;
     bottom: 0;
     left: 0;
+    display: flex;
+    gap: 1.5em;
   }
-
-
-
-
 }
