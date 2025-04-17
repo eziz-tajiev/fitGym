@@ -87,6 +87,13 @@
   color: orange;
 }
 
+.plans-card {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 3rem;
+}
+
 @media screen and (max-width: 768px) {
   .plans {
     flex-direction: column;
@@ -95,7 +102,8 @@
   .plans > :nth-child(2) {
     transform: none;
   }
+
+  .plans-card {
+    flex-direction: column;
+  }
 }
-
-
-

@@ -1,11 +1,10 @@
-import React from "react";
 import { programsData } from "../../data/programsData";
 import rightArrow from "../../assets/rightArrow.png";
 import "./Programs.css";
 
 const Programs = () => {
   return (
-    <div className="Programs" id="Programs">
+    <div className="Programs" id="Prog">
       {/* Header */}
       <div className="programs-header">
         <span className="stroke-text">Explore our</span>
