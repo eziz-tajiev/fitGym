@@ -1,16 +1,16 @@
-import React from 'react'
-import {programsData} from '../../data/programsData'
-import rightArrow from '../../assets/rightArrow.png'
-import './Programs.css'
+import React from "react";
+import { programsData } from "../../data/programsData";
+import rightArrow from "../../assets/rightArrow.png";
+import "./Programs.css";
 
 const Programs = () => {
   return (
-    <div className='Programs' id='programs'>
+    <div className="Programs" id="Programs">
       {/* Header */}
-      <div className='programs-header'>
-        <span className='stroke-text'>Explore our</span>
+      <div className="programs-header">
+        <span className="stroke-text">Explore our</span>
         <span>Programs</span>
-        <span className='stroke-text'>To shape you</span>
+        <span className="stroke-text">To shape you</span>
       </div>
 
       <div className="programs-categories">
@@ -27,7 +27,7 @@ const Programs = () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Programs
+export default Programs;

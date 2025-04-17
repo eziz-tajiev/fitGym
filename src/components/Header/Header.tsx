@@ -2,10 +2,18 @@ import "./Header.css";
 import Logo from "../../assets/logo.png";
 import Bars from "../Bars/Bars";
 import { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [menuOpened, setMenuOpened] = useState(false);
+  const menuLinks = [
+    { id: "Home", label: "Home" },
+    { id: "Programs", label: "Programs" },
+    { id: "WhyUs", label: "Why us" },
+    { id: "Plans", label: "Plans" },
+    { id: "Testimonials", label: "Testimonials" },
+  ];
 
   useEffect(() => {
     const handleResize = () => {
@@ -19,9 +27,11 @@ const Header = () => {
 
   const menuItems = (
     <ul className="header-menu">
-      {["Home", "Programs", "Why us", "Plans", "Testimonials"].map((item) => (
-        <li key={item} onClick={() => isMobile && setMenuOpened(false)}>
-          {item}
+      {menuLinks.map(({ id, label }) => (
+        <li key={id} onClick={() => isMobile && setMenuOpened(false)}>
+          <Link to={id} spy={true} smooth={true}>
+            {label}
+          </Link>
         </li>
       ))}
     </ul>
