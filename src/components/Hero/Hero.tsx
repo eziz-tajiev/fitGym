@@ -1,13 +1,12 @@
 import Header from "../Header/Header";
 import "./Hero.css";
 import HeroImage from "../../assets/fitnessHero.png";
-
 import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <div className="hero">
       <div className="hero-content">
-        {/* <Header /> */}
+        <Header />
         {/* The best */}
         <div className="the-best">
           <motion.div
