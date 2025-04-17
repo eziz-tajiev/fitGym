@@ -4,7 +4,7 @@ import HeroImage from "../../assets/fitnessHero.png";
 import { motion } from "framer-motion";
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero" id="Home">
       <div className="hero-content">
         <Header />
         {/* The best */}

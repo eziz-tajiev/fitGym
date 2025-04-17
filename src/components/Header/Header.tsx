@@ -9,9 +9,9 @@ const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
   const menuLinks = [
     { id: "Home", label: "Home" },
-    { id: "Programs", label: "Programs" },
+    { id: "Prog", label: "Programs" },
     { id: "WhyUs", label: "Why us" },
-    { id: "Plans", label: "Plans" },
+    { id: "Pl", label: "Plans" },
     { id: "Testimonials", label: "Testimonials" },
   ];
 
@@ -28,8 +28,13 @@ const Header = () => {
   const menuItems = (
     <ul className="header-menu">
       {menuLinks.map(({ id, label }) => (
-        <li key={id} onClick={() => isMobile && setMenuOpened(false)}>
-          <Link to={id} spy={true} smooth={true}>
+        <li key={id}>
+          <Link
+            to={id}
+            spy={true}
+            smooth={true}
+            onClick={() => isMobile && setMenuOpened(false)}
+          >
             {label}
           </Link>
         </li>
