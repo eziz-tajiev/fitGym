@@ -2,6 +2,12 @@ import Header from "../Header/Header";
 import "./Hero.css";
 import HeroImage from "../../assets/fitnessHero.png";
 import { motion } from "framer-motion";
+import CountUp from "react-countup";
+const figuresData = [
+  { start: 100, end: 140, label: "expert coaches" },
+  { start: 800, end: 978, label: "members joined" },
+  { start: 0, end: 50, label: "fitness programs" },
+];
 const Hero = () => {
   return (
     <div className="hero" id="Home">
@@ -38,18 +44,14 @@ const Hero = () => {
         </div>
         {/* Figueres */}
         <div className="figures">
-          <div>
-            <span>+140</span>
-            <span>expert coaches</span>
-          </div>
-          <div>
-            <span>+978</span>
-            <span>members joined</span>
-          </div>
-          <div>
-            <span>+50</span>
-            <span>fitness programs</span>
-          </div>
+          {figuresData.map(({ start, end, label }, index) => (
+            <div key={index}>
+              <span>
+                <CountUp start={start} end={end} prefix="+" duration={3} />
+              </span>
+              <span>{label}</span>
+            </div>
+          ))}
         </div>
 
         {/* Hero Buttons */}
