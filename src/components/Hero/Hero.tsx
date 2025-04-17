@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="hero-content">
-        <Header />
+        {/* <Header /> */}
         {/* The best */}
         <div className="the-best">
           <motion.div
