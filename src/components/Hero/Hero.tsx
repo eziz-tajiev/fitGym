@@ -1,7 +1,8 @@
-import React from "react";
 import Header from "../Header/Header";
 import "./Hero.css";
 import HeroImage from "../../assets/fitnessHero.png";
+
+import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <div className="hero">
@@ -9,7 +10,14 @@ const Hero = () => {
         <Header />
         {/* The best */}
         <div className="the-best">
-          <div></div>
+          <motion.div
+            initial={{ left: "238px" }}
+            whileInView={{ left: "8px" }}
+            transition={{
+              type: "spring",
+              duration: 4,
+            }}
+          />
           <span>the best fitness club in the town</span>
         </div>
 
